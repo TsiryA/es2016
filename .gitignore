@@ -2,3 +2,5 @@
 /typings/
 
 *.log
+/app/**/*.js
+/app/**/*.map
