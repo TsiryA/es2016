@@ -2,5 +2,9 @@
 /typings/
 
 *.log
+
+*.log.*
+
 /app/**/*.js
 /app/**/*.map
+
