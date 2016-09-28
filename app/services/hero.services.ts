@@ -1,4 +1,7 @@
-import { Injectable } from '@angular/core';
+import { Injectable }     from '@angular/core';
+import { Headers, Http }  from '@angular/http';
+
+import 'rxjs/add/operator/toPromise';
 
 import { Hero } from '../entities/hero';
 
@@ -6,6 +9,10 @@ import { HEROES } from '../datas/locals';
 
 @Injectable()
 export class HeroService {
+  private heroesUrl = 'app/heroes'; // URL to web api
+
+  constructor(private http: Http){}
+
   getHeroes(): Promise<Hero[]> {
     return Promise.resolve(HEROES);
   };
@@ -19,6 +26,6 @@ export class HeroService {
   findHero(id: number): Promise<Hero> {
   return this.getHeroes()
              .then(heroes => heroes.find(hero => hero.id === id));
-}
+  }
 
 }
