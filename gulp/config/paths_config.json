@@ -1,0 +1,25 @@
+{
+    "sass": {
+        "homepage": {
+            "sassWatchFilesPath": [
+                "src/sass/layouts/components/pages/homepage/**.scss",
+                "src/sass/pages/homepage/homepage.scss"
+            ],
+            "sassPath": "src/sass/pages/homepage/homepage.scss"
+        }
+    },
+    "pug": {
+        "page404": {
+            "pugWatchFilesPath": ["src/jade/pages/404/index.jade"],
+            "pugPath": "src/jade/pages/404/index.jade"
+        },
+        "page500": {
+            "pugWatchFilesPath": ["src/jade/pages/500/index.jade"],
+            "pugPath": "src/jade/pages/500/index.jade"
+        },
+        "homepage": {
+            "pugWatchFilesPath": ["src/jade/layouts/components/pages/homepage/**.jade", "src/jade/pages/index.jade"],
+            "pugPath": "src/jade/pages/index.jade"
+        }
+    }
+}

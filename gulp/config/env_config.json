@@ -1,0 +1,34 @@
+{
+    "js": {
+        "sources": ["src/js/src/**/*.js", "src/js/main.js"],
+        "libraries": ["src/js/lib/**/*.js"],
+        "vendors": ["src/js/vendor/**/*.js", "src/js/plugins.js"],
+        "outputFileName": "global.js",
+        "dest": "dist/js/"
+    },
+    "pug": {
+        "commonWatch": ["front_src/pug/layouts/**/*.pug"],
+        "pagesDir": "front_src/pug/pages/",
+        "pagesSrc": "front_src/pug/pages/**/*.pug",
+        "dest": "app/components/templates/views/"
+    },
+    "sass": {
+        "commonWatch": ["src/jade/utils/**/*.scss", "src/sass/fonts/**/*.scss", "src/sass/layouts/components/common/**/*.scss", "src/sass/common.scss"],
+        "src": ["src/sass/pages/**/*.scss", "src/sass/common.scss"],
+        "dest": "app/components/templates/styles/"
+    },
+    "img": {
+        "src": "src/img/**/*.{jpg,jpeg,png,gif,svg}",
+        "dest": "dist/img/",
+        "tinySrc": "src/img-tiny/**/*.{jpg,jpeg,png,gif,svg}",
+        "tinyDest": "src/img-tiny/"
+    },
+    "public": {
+        "src": "src/public/**/*",
+        "dest": "public/"
+    },
+    "fonts": {
+        "src": "src/fonts/**/*.{eot,svg,ttf,woff,woff2}",
+        "dest": "public/fonts/"
+    }
+}
